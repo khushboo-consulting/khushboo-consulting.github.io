@@ -252,6 +252,50 @@ section h2 {
 }
 .contact-link:hover { color: var(--gold); border-color: var(--gold); background: rgba(240,192,64,0.04); }
 
+/* ─── ENQUIRY FORM ─────────────────────────── */
+#enquiry { padding: 5rem 1.5rem; max-width: 860px; margin: 0 auto; }
+
+.enquiry-form { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.4rem; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+
+.form-group { display: flex; flex-direction: column; gap: 0.45rem; }
+
+.form-group label { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--light); opacity: 0.75; }
+
+.req { color: var(--gold); }
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(240,192,64,0.25);
+  border-radius: 6px;
+  color: var(--light);
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: rgba(245,230,200,0.3); }
+
+.form-group select option { background: #14120a; color: var(--light); }
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--gold); }
+
+.form-group textarea { resize: vertical; min-height: 120px; }
+
+.enquiry-form .btn { align-self: flex-start; margin-top: 0.5rem; }
+
+@media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
+
 /* ─── FOOTER ──────────────────────────────── */
 footer {
   border-top: 1px solid var(--border);

@@ -15,6 +15,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#process">Approach</a></li>
       <li><a href="#industries">Industries</a></li>
+      <li><a href="#enquiry">Enquiry</a></li>
       <li><a href="#contact">Connect</a></li>
     </ul>
     <div class="nav-status">Open to engagements</div>
@@ -128,10 +129,53 @@
     </div>
   </section>
 
+  <!-- ENQUIRY FORM -->
+  <section id="enquiry">
+    <p class="section-label">// 04 — enquiry</p>
+    <h2>Start the conversation.</h2>
+    <p class="section-intro">Tell us about your challenge and we'll be in touch within one business day.</p>
+    <form class="enquiry-form" action="https://formspree.io/f/xlgvlvny" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="organisation">Organisation</label>
+          <input type="text" id="organisation" name="organisation" placeholder="Company or team name" />
+        </div>
+        <div class="form-group">
+          <label for="service">Area of Interest <span class="req">*</span></label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Business Strategy">Business Strategy</option>
+            <option value="Operational Excellence">Operational Excellence</option>
+            <option value="Growth &amp; Revenue">Growth &amp; Revenue</option>
+            <option value="Digital Transformation">Digital Transformation</option>
+            <option value="Financial Advisory">Financial Advisory</option>
+            <option value="Organisational Design">Organisational Design</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Tell us about your challenge <span class="req">*</span></label>
+        <textarea id="message" name="message" rows="5" placeholder="Briefly describe what you're working on and what outcome you're hoping for..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Enquiry</button>
+    </form>
+  </section>
+
   <!-- CONTACT -->
   <div id="contact">
     <div class="inner">
-      <p class="section-label">// 04 — connect</p>
+      <p class="section-label">// 05 — connect</p>
       <h2>Let's solve something hard.</h2>
       <p class="section-intro">Have a strategic challenge or growth goal in mind? Reach out to explore how we can work together.</p>
       <div class="contact-links">
